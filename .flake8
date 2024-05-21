@@ -1,0 +1,4 @@
+[flake8]
+ignore = D100
+
+max-line-length = 110

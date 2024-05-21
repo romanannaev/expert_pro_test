@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Pytest",
+            "type": "shell",
+            "command": "pytest",
+            "args": [
+                "--maxfail=1", // Пример аргумента: останавливает тестирование после первого сбоя
+                "--disable-warnings" // Пример аргумента: отключает предупреждения
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
